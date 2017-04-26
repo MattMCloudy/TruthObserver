@@ -1,0 +1,64 @@
+                                                  text  truthVals
+0    Says U.S. greenhouse gas "emissions are at 20-...        0.8
+1    "Smog was invented in Los Angeles. It was. The...        1.0
+2    A bill to advance the Keystone XL Pipeline "is...        1.0
+3    Says \n\n"With nearly 75 percent of Americans ...        1.0
+4    More money is dedicated within the Department ...        1.0
+5    "Bill White ... supports the ‘ObamaCare’ socia...        1.0
+6    Mark Warner’s "record is one of acting against...        1.0
+7    Says. Rep. Joe Barton, R-Texas, once said, "Wi...        1.0
+8    A cap-and-trade plan promoted by Barack Obama ...        1.0
+9    "We would create thousands of jobs in Colorado...        1.0
+10   Says President Barack Obama’s homeland securit...        1.0
+11   "My opponent in November of 2008 sent a missiv...        1.0
+12   Says Mitt Romney has said different things abo...        1.0
+13   Contends that President Obama "literally said ...        1.0
+14   Says Newt Gingrich aligned with Nancy Pelosi o...        1.0
+15   Says the media created the term "polar vortex"...        1.0
+16            Says Mitt Romney supports cap and trade.        1.0
+17   Recent record-low water levels in Lake Michiga...        1.0
+18   Says "11 straight years of no major hurricanes...        1.0
+19   The United States can immediately tap a domest...        1.0
+20   "More than 7,000 Americans lost their lives to...        1.0
+21   Wisconsin’s attorney general and state treasur...        1.0
+22   Obama has admitted a cap and trade plan would ...        1.0
+23   "DEP has 2,812 employees, the lowest level sin...        1.0
+24   Despite attention on global warming, "fewer Am...        1.0
+25   "Hurricane Sandy, the most destructive Atlanti...        1.0
+26                            On a cap-and-trade plan.        1.0
+27   Annual precipitation "has increased in Rhode I...        1.0
+28                    "I never favored cap and trade."        1.0
+29   "Texas ranks: #1 in worker deaths, #1 carbon e...        1.0
+..                                                 ...        ...
+152  "The most recent survey of climate scientists ...        1.0
+153  "When I was fighting against cap and trade, th...        1.0
+154  Newt Gingrich "teamed with Nancy Pelosi and Al...        1.0
+155  Says that President Obama said in 2008 that hi...        1.0
+156  "Mike Morell testified and told Congress that ...        1.0
+157  "The Congressional Budget Office -- supposedly...        1.0
+158  "Job losses are so certain under this new cap-...        1.0
+159  New carbon regulations will increase electric ...        1.0
+160  "Obama’s Clean Power Plan ... eliminates coal-...        1.0
+161  North Carolina’s coast "is possibly the best p...        1.0
+162  "There has been no net global warming for over...        1.0
+163  A government report shows that alternatives to...        1.0
+164                           On a cap-and-trade plan.        1.0
+165  Says Tom Steyer is a "California billionaire w...        1.0
+166  "The White House removed its climate change we...        1.0
+167  The Climatic Research Unit e-mails show that t...        1.0
+168  Says Hillary Clinton "negotiated the first agr...        1.0
+169  "I can tell you with certainty (cap and trade)...        1.0
+170  Commerce Secretary nominee John Bryson "appear...        1.0
+171  In the past three years, "we've added enough n...        1.0
+172  "For every single scientist that tells you (gl...        1.0
+173  "...the earth moves closer to the sun every ye...        1.0
+174  Says Texas ranks first among the states in the...        1.0
+175  The American Power Act "would cut our dependen...        1.0
+176  "Virtually no Republican" in Washington accept...        1.0
+177  "The Clean Power Plan is something that Sen. S...        1.0
+178  Says Ocean Spray is moving its Bordentown proc...        1.0
+179  "Every major study that has been done by a leg...        1.0
+180  "If the United States moves ahead by itself (o...        1.0
+181  Says Hillary Clinton and millennials have the ...        1.0
+
+[182 rows x 2 columns]
