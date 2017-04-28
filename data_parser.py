@@ -36,12 +36,12 @@ class Parser:
         return 0.5
     
     def parseData(self):
-        del self.politifact_data['pagination']
-        del self.politifact_data['pagination-href']
+        del self.politifact_whole_data['pagination']
+        del self.politifact_whole_data['pagination-href']
         
-        self.trainable['text'] = self.politifact_data['text']
-        self.trainable['truthVals'] = 1
-        for i,x in enumerate(self.politifact_data['link_to_truth_page-src']):
+        self.trainable['text'] = self.politifact_whole_data['text']
+        self.trainable['truthVals'] = -1
+        for i,x in enumerate(self.politifact_whole_data['boolean-src']):
             switch_dict = { 'http://static.politifact.com.s3.amazonaws.com/rulings/tom-pantsonfire.gif': self.pantsOnFire(),
                             'http://static.politifact.com.s3.amazonaws.com/rulings/tom-false.png': self.false(),
                             'http://static.politifact.com.s3.amazonaws.com/rulings/tom-mostlyfalse.png': self.mostlyFalse(),
@@ -49,10 +49,18 @@ class Parser:
                             'http://static.politifact.com.s3.amazonaws.com/rulings/tom-mostlytrue.png': self.mostlyTrue(),
                             'http://static.politifact.com.s3.amazonaws.com/rulings/tom-true.png': self.true(),
                             'http://static.politifact.com.s3.amazonaws.com/rulings/fom-fullFlop.png': self.flipFlop(),
-                            'http://static.politifact.com.s3.amazonaws.com/rulings/fom-halfFlip.png': self.flipFlop()}
-            self.trainable.loc[0, 'truthVals']  = switch_dict[x]
+                            'http://static.politifact.com.s3.amazonaws.com/rulings/fom-halfFlip.png': self.flipFlop(),
+                            'http://static.politifact.com.s3.amazonaws.com/rulings/fom-noflip.png': self.flipFlop()}
+            
+            try:
+                print(x)
+                print(switch_dict[x])
+                self.trainable.loc[i, 'truthVals']  = switch_dict[x]
+            except KeyError:
+                continue
+
         
-        
+        self.trainable.to_csv('stuff.csv')
         print(self.trainable) 
         
 
