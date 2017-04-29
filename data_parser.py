@@ -35,7 +35,7 @@ class Parser:
     def flipFlop(self):
         return 0.5
     
-    def parseData(self):
+    def parsePolitifactData(self):
         del self.politifact_whole_data['pagination']
         del self.politifact_whole_data['pagination-href']
         
@@ -67,4 +67,4 @@ class Parser:
 if __name__ == '__main__':
     obj = Parser()
     obj.readCSV()
-    obj.parseData()
+    obj.parsePolitifactData()
