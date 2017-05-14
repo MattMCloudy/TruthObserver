@@ -7,12 +7,14 @@ class Parser:
         self.politifact_data = pd.DataFrame()
         self.snopes_data = pd.DataFrame()
         self.politiface_whole_data = pd.DataFrame()
+	self.wikipedia_politics_data = pd.DataFrame()
         self.trainable = pd.DataFrame()
    
     def readCSV(self):
         self.politifact_data = pd.read_csv('data/politifact_climate_scrape.csv')
         self.snopes_data = pd.read_csv('data/snopes_factcheck_scrape.csv')
         self.politifact_whole_data = pd.read_csv('data/politifact_whole_scrape.csv')
+	self.wikipedia_politics_data = pd.read_csv('data/wikipedia_politics_scrape.csv')
 
     def pantsOnFire(self):
         return 0.0
@@ -60,11 +62,22 @@ class Parser:
                 continue
 
         
-        self.trainable.to_csv('stuff.csv')
+        self.trainable.to_csv('politifact.csv')
         print(self.trainable) 
-        
+    
+    def parseWikiData(self):
+	del self.wikipedia_politics_data['topics']
+	del self.wikipedia_politics_data['topics-href']        
+	
+	self.trainable['text'] = self.wikipedia_politics_data['content']
+	self.trainable['truthVals'] = 1
+
+	self.trainable.to_csv('wiki.csv')
 
 if __name__ == '__main__':
     obj = Parser()
     obj.readCSV()
-    obj.parsePolitifactData()
+    obj.parseWikiData()
+
+
+
